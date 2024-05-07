@@ -1,5 +1,7 @@
 Step-1
-go to main product.liquid below media gallery 
+go to main product.liquid or 
+product-media-gallery below 
+<media-gallery>
 
  {% if section.settings.gallery_layout == 'vertical-thumbnail_slider' %} 
       <vertical-slider-component> 
@@ -203,12 +205,14 @@ go to main product.liquid below media gallery
 step-2
 
 below <media-gallery>
-paste this code{% endif %}
+----code
+-----{% endif %}
 
 =================================================================================================================================
 
 step-3
-
+find schema in main-product
+https://prnt.sc/a-jz6bd9XTjs
 and go schema and paste this code 
 
         {
@@ -547,9 +551,10 @@ vertical-slider-component .slider-button--prev:not([disabled]):hover .icon {
 
 step-5
 
-go to globel.js and paste this code 
+---go to globel.js
 
-find this code 
+---find this code 
+
   updateMedia() {
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
@@ -563,7 +568,7 @@ find this code
     modalContent.prepend(newMediaModal);
   }
   
-  replace this code---------
+  replace  and paste this code ---------
 
     updateMedia() {	
     if (!this.currentVariant) return;	
